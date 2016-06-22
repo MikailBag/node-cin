@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "cin",
-      "sources": [ "main.cpp" ]
+      "sources": [ "native/main.cpp" ]
     }
   ]
 }

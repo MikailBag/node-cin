@@ -4,7 +4,9 @@
   "description": "sync read from stdin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "postinstall": "npm run build"
   },
   "keywords": [
     "sync",
@@ -13,6 +15,12 @@
   "author": "MikailBag",
   "license": "MIT",
   "dependencies": {
-    "bindings": "1.2.1"
+    "bindings": "1.2.1",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "node-gyp": "^3.3.1"
+  },
+  "repository": "https://github.com/MikailBag/node-cin",
+  "devDependencies": {
+    "del": "^2.2.1"
   }
 }
